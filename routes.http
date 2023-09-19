@@ -1,10 +1,10 @@
 # @name get-prompts
-GET http://localhost:4403/prompts
+GET https://server-api-0hc7.onrender.com/prompts
 
 ###
 
 # @name upload
-POST http://localhost:4403/videos
+POST https://server-api-0hc7.onrender.com/videos
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
 
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
@@ -17,7 +17,7 @@ Content-Type: audio/mpeg;
 ###
 
 # @name create-transcription
-POST http://localhost:4403/videos/154d3756-f989-4606-9454-bea7ebb1a434/transcription
+POST https://server-api-0hc7.onrender.com/videos/154d3756-f989-4606-9454-bea7ebb1a434/transcription
 Content-Type: application/json
 
 {
@@ -27,7 +27,7 @@ Content-Type: application/json
 ###
 
 # @name generate-ai-completion
-POST http://localhost:4403/ai/complete
+POST https://server-api-0hc7.onrender.com/ai/complete
 Content-Type: application/json
 
 {
